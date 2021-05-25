@@ -1,5 +1,45 @@
 @import "../partials/colors";
 
+//NAVBAR
+
+.nav {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+
+  & > * {
+    flex: 1;
+  }
+
+  &--link {
+    text-decoration: none;
+    display: flex;
+
+    & > * {
+      flex: 1;
+    }
+
+    &:nth-of-type(1) {
+      background: $main-color;
+    }
+    &:nth-of-type(2) {
+      background: #202426c6;
+    }
+    &:nth-of-type(3) {
+      background: #2024266b;
+    }
+    &:nth-of-type(4) {
+      background: #20242643;
+    }
+
+    &__cont {
+      height: 100%;
+      text-align: center;
+    }
+  }
+}
+
 //HEADER
 
 .header {
