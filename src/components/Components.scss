@@ -40,6 +40,10 @@
   }
 }
 
+.active {
+  border-bottom: 3px solid whitesmoke;
+}
+
 //HEADER
 
 .link {
@@ -76,5 +80,37 @@
     &:focus {
       transform: scale(1.5);
     }
+  }
+}
+
+//HOME
+
+.home {
+  background: #a4a4a497;
+  backdrop-filter: blur(0.2em);
+  border-radius: 0 0.5em 0.5em 0;
+  padding: 1em;
+  margin-top: 5em;
+  margin-right: 1em;
+
+  &--text {
+    color: #fff;
+    margin-left: 1em;
+
+    span {
+      color: $main-color;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 5%;
+    width: 100%;
+    height: 100%;
+    // background: red;
+    border-radius: 0.5em 0 0 0.5em;
+    border: 0.15em solid $main-color;
+    border-right: none;
   }
 }
