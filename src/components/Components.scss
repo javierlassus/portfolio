@@ -42,17 +42,22 @@
 
 //HEADER
 
-.header {
-  margin-top: 2rem;
-  background: $red;
-  width: 75%;
-  border-radius: 0 0.5em 0.5em 0;
-  text-align: end;
+.link {
+  text-decoration: none;
 
-  &--title {
-    margin-right: 1em;
-    font-size: 16px;
-    padding: 0.5em;
+  &--header {
+    margin-top: 2rem;
+    background: $red;
+    width: 75%;
+    border-radius: 0 0.5em 0.5em 0;
+    text-align: end;
+
+    &__title {
+      text-decoration: none;
+      margin-right: 1em;
+      font-size: 16px;
+      padding: 0.5em;
+    }
   }
 }
 
