@@ -15,13 +15,12 @@ body {
 
 body::after {
   z-index: -1;
-  position: absolute;
+  position: fixed;
   content: "";
   height: 50%;
   width: 100%;
-  background: $main-shape;
-  bottom: 6.8%;
-
+  background: $red;
+  bottom: 6.5%;
   clip-path: polygon(
     0 0,
     0 100%,
