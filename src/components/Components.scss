@@ -1,0 +1,17 @@
+@import "../partials/colors";
+
+//HEADER
+
+.header {
+  margin-top: 3rem;
+  background: $red;
+  width: 75%;
+  border-radius: 0 0.5em 0.5em 0;
+  text-align: end;
+
+  &--title {
+    margin-right: 1em;
+    font-size: 16px;
+    padding: 0.5em;
+  }
+}

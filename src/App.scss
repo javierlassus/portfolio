@@ -1,21 +1,26 @@
+@import "./partials/colors";
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+  color: $font-color;
 }
 
 body {
   line-height: 1.5;
   font-family: sans-serif;
+  background: $background;
 }
 
-body::before {
+body::after {
   position: absolute;
   content: "";
   height: 50%;
   width: 100%;
-  background: red;
+  background: $main-shape;
   bottom: 10%;
+
   clip-path: polygon(
     0 0,
     0 100%,
