@@ -1,0 +1,75 @@
+@import "../partials/colors";
+
+//NAVBAR
+
+.nav {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+
+  & > * {
+    flex: 1;
+  }
+
+  &--link {
+    text-decoration: none;
+    display: flex;
+
+    & > * {
+      flex: 1;
+    }
+
+    &:nth-of-type(1) {
+      background: $main-color;
+    }
+    &:nth-of-type(2) {
+      background: #202426c6;
+    }
+    &:nth-of-type(3) {
+      background: #2024266b;
+    }
+    &:nth-of-type(4) {
+      background: #20242643;
+    }
+
+    &__cont {
+      height: 100%;
+      text-align: center;
+    }
+  }
+}
+
+//HEADER
+
+.header {
+  margin-top: 2rem;
+  background: $red;
+  width: 75%;
+  border-radius: 0 0.5em 0.5em 0;
+  text-align: end;
+
+  &--title {
+    margin-right: 1em;
+    font-size: 16px;
+    padding: 0.5em;
+  }
+}
+
+//SOCIAL ICONS
+
+.cont {
+  position: absolute;
+  bottom: 10%;
+  right: 4%;
+  display: flex;
+  flex-direction: column;
+  &--img {
+    width: 35px;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.5);
+    }
+  }
+}
