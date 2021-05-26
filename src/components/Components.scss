@@ -74,6 +74,8 @@
   right: 4%;
   display: flex;
   flex-direction: column;
+  z-index: 1;
+
   &--img {
     width: 35px;
 
