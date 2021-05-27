@@ -8,6 +8,7 @@
   position: fixed;
   background: whitesmoke;
   bottom: 0;
+  z-index: 1;
 
   & > * {
     flex: 1;
@@ -74,6 +75,8 @@
   right: 4%;
   display: flex;
   flex-direction: column;
+  z-index: 1;
+
   &--img {
     width: 35px;
 
@@ -87,20 +90,127 @@
 //HOME
 
 .home {
-  background: #a4a4a497;
-  backdrop-filter: blur(0.2em);
-  border-radius: 0.5em 0 0 0.5em;
-  padding: 1em;
-  margin-top: 2em;
-  margin-left: 1em;
-
-  &--text {
-    color: #fff;
+  &--cont,
+  &--tools {
+    background: #a4a4a497;
+    backdrop-filter: blur(0.2em);
+    border-radius: 0.5em 0 0 0.5em;
+    padding: 1em;
+    margin-top: 2em;
     margin-left: 1em;
-    font-size: 1em;
 
-    span {
-      color: $red;
+    &__text {
+      color: #fff;
+      margin-left: 1em;
+      font-size: 1em;
+
+      span {
+        color: $red;
+      }
+    }
+  }
+
+  &--tools {
+    margin-left: 0;
+    margin-right: 1em;
+    border-radius: 0 0.5em 0.5em 0;
+    text-align: right;
+    color: #fff;
+  }
+}
+
+//TOOLS ICONS
+
+.tool {
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+
+  &--cont {
+    height: 40px;
+    width: 40px;
+    box-sizing: content-box;
+    margin: 0 0.5rem;
+    background: #a4a4a497;
+    backdrop-filter: blur(0.2em);
+    border-radius: 50%;
+    padding: 1rem;
+
+    &__img {
+      height: 40px;
+      width: 40px;
+      background-position: center;
+      background-size: cover;
+    }
+
+    .one {
+      animation: icons-1 4s infinite ease-in;
+    }
+    .two {
+      animation: icons-2 4s infinite ease-in;
+    }
+    .three {
+      animation: icons-3 4s infinite ease-in;
+    }
+    .four {
+      animation: icons-4 4s infinite ease-in;
+    }
+
+    @keyframes icons-1 {
+      0% {
+        background-image: url(https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg);
+      }
+      25% {
+        background-image: url(https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg);
+      }
+      50% {
+        background-image: url(https://www.vectorlogo.zone/logos/figma/figma-icon.svg);
+      }
+      100% {
+        background-image: url(https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg);
+      }
+    }
+    @keyframes icons-2 {
+      0% {
+        background-image: url(https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg);
+      }
+      25% {
+        background-image: url(https://www.vectorlogo.zone/logos/heroku/heroku-icon.svg);
+      }
+      50% {
+        background-image: url(https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg);
+      }
+      100% {
+        background-image: url(https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg);
+      }
+    }
+    @keyframes icons-3 {
+      0% {
+        background-image: url(https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg);
+      }
+      25% {
+        background-image: url(https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg);
+      }
+      50% {
+        background-image: url(https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg);
+      }
+      100% {
+        background-image: url(https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg);
+      }
+    }
+    @keyframes icons-4 {
+      0% {
+        background-image: url(https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg);
+      }
+      25% {
+        background-image: url(https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg);
+      }
+      50% {
+        background-image: url(https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg);
+      }
+      100% {
+        background-image: url(https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg);
+      }
     }
   }
 }
