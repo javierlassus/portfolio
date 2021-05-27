@@ -4,13 +4,15 @@ import ToolIcons from "./ToolIcons";
 
 export default function Home() {
   return (
-    <div>
-      <div className="home">
-        <p className="home--text">
-          HI THERE, MY NAME IS <span>JAVIER LASSUS</span>. IM A WEB DEVELOPER
-          EAGER TO LEARN AND BUILD NEW THINGS.
+    <div className="home">
+      <div className="home--cont">
+        <p className="home--cont__text">
+          HI THERE, MY NAME IS <span>JAVIER LASSUS</span>.
         </p>
-        <p className="home--text">
+        <p className="home--cont__text">
+          IM A WEB DEVELOPER EAGER TO LEARN AND BUILD NEW THINGS.
+        </p>
+        <p className="home--cont__text">
           FOR THE PAST YEAR, LIFE HAS BEEN REALLY HARD FOR MANY PEOPLE, I LOST
           MY JOB AS A CABLE TECHNICIAN. AFTER ALMOST EIGHT MONTHS OF
           UNEMPLOYMENT AND NOT BEING ABLE TO FIND ANYTHING THAT WOULD GIVE ANY
@@ -19,6 +21,7 @@ export default function Home() {
           JUST DISCOVER
         </p>
       </div>
+      <p className="home--tools">LANGUAGES AND TOOLS</p>
       <ToolIcons />
     </div>
   );
