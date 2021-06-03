@@ -7,13 +7,19 @@
   top: 0;
   width: 100%;
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  padding: 1rem 0.5rem 1rem 1rem;
+  padding: 1rem 0 1rem 0.5rem;
   background: rgba(255, 255, 255, 0.667);
   backdrop-filter: blur(0.5rem);
 
+  &--link {
+    text-decoration: none;
+  }
+
   &--header {
     &__name {
+      color: black;
       font-size: clamp(1.3rem, 0.7153rem + 1.6368vw, 1.5rem);
     }
 
@@ -43,5 +49,15 @@
     margin-top: 0.2rem;
     width: 30px;
     height: 30px;
+  }
+}
+
+//HOME DESCRIPTION
+
+.description {
+  margin: 7rem 0.5rem 0 0.5rem;
+
+  &--text {
+    margin-bottom: 2rem;
   }
 }
