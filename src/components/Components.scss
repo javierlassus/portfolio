@@ -4,15 +4,22 @@
 
 .nav {
   position: fixed;
+  top: 0;
   width: 100%;
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  padding: 1rem 0.5rem 1rem 1rem;
+  padding: 1rem 0 1rem 0.5rem;
   background: rgba(255, 255, 255, 0.667);
   backdrop-filter: blur(0.5rem);
 
+  &--link {
+    text-decoration: none;
+  }
+
   &--header {
     &__name {
+      color: black;
       font-size: clamp(1.3rem, 0.7153rem + 1.6368vw, 1.5rem);
     }
 
@@ -27,5 +34,65 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+}
+
+//SOCIAL ICONS
+
+.social {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  &--img {
+    margin-top: 0.2rem;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+//HOME DESCRIPTION
+
+.description {
+  margin: 7rem 0.5rem 0 0.5rem;
+
+  &--text {
+    margin-bottom: 2rem;
+    font-size: 0.9em;
+  }
+
+  &--name {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+  }
+
+  &--actions {
+    margin-bottom: 1rem;
+    color: gray;
+    font-size: 0.7em;
+
+    &__view,
+    &__link {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      font-size: 0.9em;
+    }
+    &__view {
+      margin-right: 0.4em;
+    }
+    &__link {
+      margin-left: 0.4em;
+    }
+  }
+
+  &--btn {
+    font-size: 0.7em;
+    border: none;
+    border-radius: 0.2em;
+    background: rgba(235, 235, 235, 0.873);
+    padding: 0.5em 1em;
+    font-weight: bold;
   }
 }
