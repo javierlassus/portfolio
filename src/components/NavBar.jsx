@@ -1,14 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
+import "./Components.scss";
 
 export default function NavBar() {
+  const [open, setOpen] = useState(false);
+
+  const handleToggle = () => {
+    setOpen(!open);
+  };
+
   return (
-    <div>
-      <div>
-        <h1>Javier Lassus</h1>
-        <p>Full-Stack Dev</p>
+    <div className="nav">
+      <div className="nav--header">
+        <h1 className="nav--header__name">Javier Lassus</h1>
+        <p className="nav--header--title">Full-Stack Dev</p>
       </div>
-      <div>
-        <p>menu</p>
+      <div className="nav--btn">
+        <p className="nav--btn__menu">menu</p>
+        <button className={open ? "nav-open" : null}>
+          <span className="nav--btn__ctn__hamburger"></span>
+        </button>
       </div>
     </div>
   );

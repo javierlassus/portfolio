@@ -5,12 +5,13 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  color: #000;
   font-family: "Helvetica", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  line-height: 1.5;
+  min-height: 100vh;
   font-family: sans-serif;
   background: #ffffff;
 }
