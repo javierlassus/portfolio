@@ -59,5 +59,40 @@
 
   &--text {
     margin-bottom: 2rem;
+    font-size: 0.9em;
+  }
+
+  &--name {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+  }
+
+  &--actions {
+    margin-bottom: 1rem;
+    color: gray;
+    font-size: 0.7em;
+
+    &__view,
+    &__link {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      font-size: 0.9em;
+    }
+    &__view {
+      margin-right: 0.4em;
+    }
+    &__link {
+      margin-left: 0.4em;
+    }
+  }
+
+  &--btn {
+    font-size: 0.7em;
+    border: none;
+    border-radius: 0.2em;
+    background: rgba(235, 235, 235, 0.873);
+    padding: 0.5em 1em;
+    font-weight: bold;
   }
 }

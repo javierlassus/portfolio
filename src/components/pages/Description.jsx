@@ -15,8 +15,11 @@ export default function Description() {
         My name is Javier Lassus and I’m a Full-Stack developer.
       </h2>
       <p className="description--actions">
-        <a href="#">View Projects</a>or
-        <Link to="/about" to>
+        <a className="description--actions__view" href="#">
+          View Projects
+        </a>
+        or
+        <Link className="description--actions__link" to="/about" to>
           Read About Me
         </Link>
       </p>
