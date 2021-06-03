@@ -29,3 +29,18 @@
     align-items: center;
   }
 }
+
+//SOCIAL ICONS
+
+.social {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  &--img {
+    margin-top: 0.2rem;
+    width: 30px;
+    height: 30px;
+  }
+}
