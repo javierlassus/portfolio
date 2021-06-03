@@ -3,13 +3,27 @@
 //NAVBAR
 
 .nav {
+  position: fixed;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  margin: 1rem 0.5rem 1rem 1rem;
-  //   background: chartreuse;
+  padding: 1rem 0.5rem 1rem 1rem;
+  background: rgba(255, 255, 255, 0.667);
+  backdrop-filter: blur(0.5rem);
+
+  &--header {
+    &__name {
+      font-size: clamp(1.3rem, 0.7153rem + 1.6368vw, 1.5rem);
+    }
+
+    &__title {
+      color: rgb(159, 159, 159);
+      letter-spacing: 0.25em;
+      font-size: clamp(0.1rem, 0.5rem + 1vw, 0.9rem);
+    }
+  }
 
   &--btn {
-    // background: red;
     display: flex;
     justify-content: center;
     align-items: center;

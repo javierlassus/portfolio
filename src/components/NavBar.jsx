@@ -9,7 +9,7 @@ export default function NavBar() {
     <nav className="nav">
       <div className="nav--header">
         <h1 className="nav--header__name">Javier Lassus</h1>
-        <p className="nav--header--title">Full-Stack Dev</p>
+        <p className="nav--header__title">Full-Stack Dev</p>
       </div>
       <div className="nav--btn">
         <p className="nav--btn__menu">menu</p>
