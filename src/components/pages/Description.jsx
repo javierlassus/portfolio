@@ -15,17 +15,18 @@ export default function Description() {
         My name is Javier Lassus and I’m a Full-Stack developer.
       </h2>
       <p className="description--actions">
-        <a className="description--actions__view" href="#">
+        <a className="description--actions__view" href="#projects">
           View Projects
         </a>
         or
-        <Link className="description--actions__link" to="/about" to>
+        <Link className="description--actions__link" to="/about">
           Read About Me
         </Link>
       </p>
       <Link>
         <button className="description--btn">Contact Me</button>
       </Link>
+      <p id="#projects">Projects</p>
     </div>
   );
 }
