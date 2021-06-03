@@ -1,7 +1,7 @@
 import React from "react";
 import "./Components.scss";
-import In from "../assets/icons/linkedin.svg";
-import Git from "../assets/icons/github.svg";
+// import In from "../assets/icons/linkedin.svg";
+// import Git from "../assets/icons/github.svg";
 
 export default function Icons() {
   return (
