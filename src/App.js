@@ -2,7 +2,7 @@ import React from "react";
 import "./App.scss";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
-import Header from "./components/Header";
+import Footer from "./components/Footer";
 import Icons from "./components/Icons";
 import Home from "./components/pages/Home";
 import Projects from "./components/pages/Projects";
@@ -12,7 +12,6 @@ import Resume from "./components/pages/Resume";
 export default function App() {
   return (
     <Router>
-      <Header />
       <NavBar />
       <Icons />
       <Switch>
@@ -21,6 +20,7 @@ export default function App() {
         <Route path="/contact" component={Contact} />
         <Route path="/resume" component={Resume} />
       </Switch>
+      <Footer />
     </Router>
   );
 }

@@ -1,5 +1,5 @@
 import React from "react";
 
-export default function DeskNav() {
+export default function Footer() {
   return <div></div>;
 }
