@@ -20,13 +20,11 @@
   &--header {
     &__name {
       color: black;
-      font-size: clamp(1.3rem, 0.7153rem + 1.6368vw, 1.5rem);
     }
 
     &__title {
       color: rgb(159, 159, 159);
       letter-spacing: 0.25em;
-      font-size: clamp(0.1rem, 0.5rem + 1vw, 0.9rem);
     }
   }
 
@@ -34,6 +32,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    &__menu {
+      text-transform: uppercase;
+      font-size: 13px;
+      font-weight: bold;
+    }
   }
 }
 
@@ -56,28 +60,31 @@
 
 .description {
   margin: 7rem 0.5rem 0 0.5rem;
+  font-size: 1.1rem;
 
   &--text {
-    margin-bottom: 2rem;
-    font-size: 0.9em;
+    margin-bottom: 1.5rem;
+    color: grey;
+    font-weight: bold;
   }
 
   &--name {
+    color: grey;
+  }
+
+  &--position {
     margin-bottom: 1rem;
-    font-size: 1.3rem;
   }
 
   &--actions {
     margin-bottom: 1rem;
     color: gray;
-    font-size: 0.7em;
 
     &__view,
     &__link {
       text-decoration: none;
       color: black;
       font-weight: bold;
-      font-size: 0.9em;
     }
     &__view {
       margin-right: 0.4em;
@@ -88,11 +95,11 @@
   }
 
   &--btn {
-    font-size: 0.7em;
     border: none;
     border-radius: 0.2em;
     background: rgba(235, 235, 235, 0.873);
-    padding: 0.5em 1em;
+    padding: 1em 1.5em;
     font-weight: bold;
+    font-size: 1rem;
   }
 }

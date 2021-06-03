@@ -11,9 +11,8 @@ export default function Description() {
         doing until last days and I’m sure, I will be doing some insane work for
         the years to come.
       </p>
-      <h2 className="description--name">
-        My name is Javier Lassus and I’m a Full-Stack developer.
-      </h2>
+      <h3 className="description--name">Javier Lassus</h3>
+      <h2 className="description--position">Full-Stack Developer</h2>
       <p className="description--actions">
         <a className="description--actions__view" href="#projects">
           View Projects
@@ -26,7 +25,6 @@ export default function Description() {
       <Link>
         <button className="description--btn">Contact Me</button>
       </Link>
-      <p id="#projects">Projects</p>
     </div>
   );
 }
