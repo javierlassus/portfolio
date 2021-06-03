@@ -1,16 +1,18 @@
 @import "./partials/colors";
+@import "./partials/fonts";
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
-  color: $font-color;
+  color: #000;
+  font-family: "Helvetica", sans-serif;
 }
 
 body {
   line-height: 1.5;
   font-family: sans-serif;
-  background: $background;
+  background: #ffffff;
 }
 
 body::after {
@@ -19,8 +21,8 @@ body::after {
   content: "";
   height: 50%;
   width: 100%;
-  background: $red;
-  bottom: 8%;
+  background: #f9f9f9;
+  bottom: 0;
   clip-path: polygon(
     0 0,
     0 100%,
