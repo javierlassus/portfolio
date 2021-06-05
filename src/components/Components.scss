@@ -19,11 +19,12 @@
 
   &--header {
     &__name {
-      color: black;
+      color: #2f4858;
+      position: relative;
     }
 
     &__title {
-      color: rgb(159, 159, 159);
+      color: #bdbbb2;
       letter-spacing: 0.25em;
     }
   }
@@ -34,6 +35,7 @@
     align-items: center;
 
     &__menu {
+      color: #2f4858;
       text-transform: uppercase;
       font-size: 13px;
       font-weight: bold;
@@ -56,34 +58,68 @@
   }
 }
 
+//HOME IMAGE
+
+.image {
+  z-index: -1;
+  position: relative;
+  margin-top: 5rem;
+  height: 15rem;
+  background: url(../assets/images/fernando-hernandez-JdoofvUDUwc-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(50% 0, 100% 0, 56% 100%, 0% 100%);
+
+  // &::before,
+  // &::after {
+  //   position: absolute;
+  //   content: "";
+  //   background: #dbdbdb33;
+  //   backdrop-filter: blur(0.5rem);
+  //   width: 100%;
+  // }
+
+  // &::before {
+  //   top: 0;
+  //   height: 6rem;
+  // }
+
+  // &::after {
+  //   bottom: 0;
+  //   height: 4.5rem;
+  // }
+}
+
 //HOME DESCRIPTION
 
 .description {
-  margin: 7rem 0.5rem 0 0.5rem;
+  margin: 1rem 0.5rem 0 0.5rem;
   font-size: 1.1rem;
 
   &--text {
     margin-bottom: 1.5rem;
-    color: grey;
-    font-weight: bold;
+    color: #bdbbb2;
+    // font-weight: bold;
   }
 
   &--name {
-    color: grey;
+    color: #bdbbb2;
+    letter-spacing: 0.2em;
   }
 
   &--position {
     margin-bottom: 1rem;
+    color: #2f4858;
   }
 
   &--actions {
     margin-bottom: 1rem;
-    color: gray;
+    color: #bdbbb2;
 
     &__view,
     &__link {
       text-decoration: none;
-      color: black;
+      color: #2f4858;
       font-weight: bold;
     }
     &__view {
@@ -95,11 +131,18 @@
   }
 
   &--btn {
+    color: #2f4858;
     border: none;
-    border-radius: 0.2em;
-    background: rgba(235, 235, 235, 0.873);
+    border-radius: 0.4em;
+    background: #e8e8e899;
     padding: 1em 1.5em;
     font-weight: bold;
     font-size: 1rem;
+
+    &:hover,
+    &:focus {
+      background: #2f4858;
+      color: white;
+    }
   }
 }

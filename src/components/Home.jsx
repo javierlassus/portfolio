@@ -1,11 +1,12 @@
 import React from "react";
 import "./Components.scss";
 import Description from "./pages/Description";
-// import ToolIcons from "./ToolIcons";
+import Image from "./pages/Image";
 
 export default function Home() {
   return (
     <div className="home">
+      <Image />
       <Description />
     </div>
   );
