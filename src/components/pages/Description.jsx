@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 export default function Description() {
   return (
     <div className="description">
+      <h3 className="description--name">Javier Lassus</h3>
+      <h2 className="description--position">Full-Stack Developer</h2>
       <p className="description--text">
         For the past year, life has been a complete new journey for me. I just
         graduated from one the greatest Coding Bootcamps ever, which showed me
@@ -11,8 +13,6 @@ export default function Description() {
         doing until last days and I’m sure, I will be doing some insane work for
         the years to come.
       </p>
-      <h3 className="description--name">Javier Lassus</h3>
-      <h2 className="description--position">Full-Stack Developer</h2>
       <p className="description--actions">
         <a className="description--actions__view" href="#projects">
           View Projects

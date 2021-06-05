@@ -23,6 +23,7 @@ export default function NavBar() {
           rounded
           distance="sm"
           hideOutline={false}
+          color="#2f4858"
         />
       </div>
     </nav>
