@@ -8,7 +8,7 @@ export default function NavBar() {
 
   return (
     <nav className="nav">
-      <Link className="nav--link" to="/">
+      <Link className="link" to="/">
         <div className="nav--header">
           <h1 className="nav--header__name">Javier Lassus</h1>
           <p className="nav--header__title">Full-Stack Dev</p>

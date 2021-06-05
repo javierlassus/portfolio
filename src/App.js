@@ -10,6 +10,9 @@ import Projects from "./components/pages/Projects";
 import Contact from "./components/pages/Contact";
 import Resume from "./components/pages/Resume";
 
+//PROJECTS
+import ProjectOne from "./components/pages/ProjectOne";
+
 export default function App() {
   return (
     <Router>
@@ -21,6 +24,7 @@ export default function App() {
         <Route path="/projects" component={Projects} />
         <Route path="/contact" component={Contact} />
         <Route path="/resume" component={Resume} />
+        <Route path="/neighboorhood-crime-alert" component={ProjectOne} />
       </Switch>
       <Footer />
     </Router>
