@@ -15,7 +15,7 @@ export default function Information() {
       <div className="information--follow">
         <p className="information--follow__header">Follow me on</p>
         <p>
-          <a className="link" href="linkedin.com/in/javierlassus">
+          <a className="link" href="https://www.linkedin.com/in/javierlassus/">
             LinkedIn
           </a>
           <span>|</span>
