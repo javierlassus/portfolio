@@ -1,6 +1,11 @@
 import React from "react";
 import "../Components.scss";
+import Fade from "react-reveal/Fade";
 
 export default function Image() {
-  return <div className="image"></div>;
+  return (
+    <Fade left>
+      <div className="image"></div>
+    </Fade>
+  );
 }
