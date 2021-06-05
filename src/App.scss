@@ -8,12 +8,13 @@
   font-family: basic-sans, sans-serif;
   margin: 0;
   padding: 0;
+  color: $secundary-text;
 }
 
 body {
   min-height: 100vh;
   font-family: sans-serif;
-  background: #ffffff;
+  background: $main-bg;
 }
 
 body::after {
@@ -22,7 +23,7 @@ body::after {
   content: "";
   height: 50%;
   width: 100%;
-  background: #efefef5c;
+  background: $shape;
   bottom: 0;
   clip-path: polygon(
     0 0,
@@ -38,4 +39,8 @@ body::after {
     25% 28%,
     20% 17%
   );
+}
+
+.link {
+  text-decoration: none;
 }

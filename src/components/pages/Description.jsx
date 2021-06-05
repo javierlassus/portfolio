@@ -5,13 +5,13 @@ import Fade from "react-reveal/Fade";
 export default function Description() {
   return (
     <div className="description">
-      <Fade right>
+      <Fade left>
         <h3 className="description--name">Javier Lassus</h3>
       </Fade>
-      <Fade left>
+      <Fade right>
         <h2 className="description--position">Full-Stack Developer</h2>
       </Fade>
-      <Fade right>
+      <Fade left>
         <p className="description--text">
           For the past year, life has been a complete new journey for me. I just
           graduated from one the greatest Coding Bootcamps ever, which showed me
@@ -20,8 +20,7 @@ export default function Description() {
           work for the years to come.
         </p>
       </Fade>
-
-      <Fade left>
+      <Fade right>
         <p className="description--actions">
           <a className="description--actions__view" href="#projects">
             View Projects

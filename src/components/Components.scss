@@ -10,21 +10,21 @@
   align-items: center;
   justify-content: space-between;
   padding: 1rem 0 1rem 0.5rem;
-  background: rgba(255, 255, 255, 0.667);
-  backdrop-filter: blur(0.5rem);
+  @include nav;
+  z-index: 2;
 
   &--link {
-    text-decoration: none;
+    // text-decoration: none;
   }
 
   &--header {
     &__name {
-      color: #2f4858;
+      color: $headers;
       position: relative;
     }
 
     &__title {
-      color: #bdbbb2;
+      color: $secundary-text;
       letter-spacing: 0.25em;
     }
   }
@@ -35,7 +35,7 @@
     align-items: center;
 
     &__menu {
-      color: #2f4858;
+      color: $headers;
       text-transform: uppercase;
       font-size: 13px;
       font-weight: bold;
@@ -51,6 +51,7 @@
   position: fixed;
   bottom: 2%;
   right: 2%;
+  z-index: 1;
   &--img {
     margin-top: 0.2rem;
     width: 30px;
@@ -62,32 +63,33 @@
 
 .image {
   z-index: -1;
-  position: relative;
   margin-top: 5rem;
-  height: 15rem;
+  position: relative;
+  height: 20rem;
+  object-fit: contain;
   background: url(../assets/images/fernando-hernandez-JdoofvUDUwc-unsplash.jpg);
   background-size: cover;
   background-position: center;
-  clip-path: polygon(50% 0, 100% 0, 56% 100%, 0% 100%);
+  clip-path: polygon(45% 0, 100% 0, 100% 28%, 58% 100%, 0 100%, 0 70%);
 
-  // &::before,
-  // &::after {
-  //   position: absolute;
-  //   content: "";
-  //   background: #dbdbdb33;
-  //   backdrop-filter: blur(0.5rem);
-  //   width: 100%;
-  // }
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    background: #dbdbdb33;
+    backdrop-filter: blur(0.3rem);
+    width: 100%;
+  }
 
-  // &::before {
-  //   top: 0;
-  //   height: 6rem;
-  // }
+  &::before {
+    top: 0;
+    height: 6.5rem;
+  }
 
-  // &::after {
-  //   bottom: 0;
-  //   height: 4.5rem;
-  // }
+  &::after {
+    bottom: 0;
+    height: 6rem;
+  }
 }
 
 //HOME DESCRIPTION
@@ -98,28 +100,28 @@
 
   &--text {
     margin-bottom: 1.5rem;
-    color: #bdbbb2;
+    color: $secundary-text;
     // font-weight: bold;
   }
 
   &--name {
-    color: #bdbbb2;
+    color: $secundary-text;
     letter-spacing: 0.2em;
   }
 
   &--position {
     margin-bottom: 1rem;
-    color: #2f4858;
+    color: $headers;
   }
 
   &--actions {
     margin-bottom: 1rem;
-    color: #bdbbb2;
+    color: $secundary-text;
 
     &__view,
     &__link {
       text-decoration: none;
-      color: #2f4858;
+      color: $headers;
       font-weight: bold;
     }
     &__view {
@@ -131,7 +133,7 @@
   }
 
   &--btn {
-    color: #2f4858;
+    color: $headers;
     border: none;
     border-radius: 0.4em;
     background: #e8e8e899;
@@ -142,8 +144,114 @@
 
     &:hover,
     &:focus {
-      background: #2f4858;
+      background: $btn-hover;
       color: white;
+    }
+  }
+}
+
+//PROJECTS
+
+.projects {
+  margin: 4rem 0.5rem 1rem 0.5rem;
+
+  &--header {
+    margin-bottom: 1rem;
+
+    &__text {
+      font-size: 1.5rem;
+      letter-spacing: 0.2em;
+      color: $headers;
+    }
+  }
+
+  &--descr {
+    &__text {
+      padding: 1rem;
+      background: chocolate;
+      height: 25rem;
+      font-size: 1.1rem;
+
+      p,
+      h3 {
+        color: $main-bg;
+      }
+
+      p {
+        margin-bottom: 0.5rem;
+        letter-spacing: 0.1em;
+      }
+
+      h3 {
+        font-size: 1.3em;
+      }
+    }
+  }
+}
+
+//FOOTER WORK SECTION
+
+.work {
+  margin: 1rem 0.5rem 1rem 0.5rem;
+
+  &--hr {
+    &:first-of-type {
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+    }
+
+    &:last-of-type {
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+    }
+
+    border: 1px solid $secundary-text;
+  }
+}
+
+//FOOTER INFORMATION SECTION
+
+.information {
+  margin: 0 0.5rem 2rem 0.5rem;
+
+  &--ctn {
+    margin: 2rem 0;
+
+    &__header {
+      color: $headers;
+      letter-spacing: 0.2rem;
+      margin-bottom: 1rem;
+    }
+
+    &__details {
+      margin: 0.5rem 0;
+      font-size: 1.1rem;
+
+      span {
+        margin-left: 0.5em;
+        color: $headers;
+      }
+    }
+  }
+
+  &--follow {
+    font-size: 1.1rem;
+
+    &__header,
+    a {
+      color: $headers;
+    }
+
+    p {
+      margin-top: 0.5em;
+    }
+
+    a:first-of-type {
+      margin-right: 0.5em;
+    }
+
+    a:last-of-type {
+      margin-left: 0.5em;
     }
   }
 }
