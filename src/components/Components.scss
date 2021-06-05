@@ -207,6 +207,32 @@
 
     border: 1px solid $secundary-text;
   }
+
+  &--text__action {
+    background: yellow;
+    display: flex;
+    align-items: center;
+    margin-top: 0.5em;
+
+    &:hover:first-of-type img {
+      margin-left: 3rem;
+    }
+
+    h3 {
+      color: $headers;
+      font-size: 1.5rem;
+    }
+
+    img {
+      width: 2rem;
+      margin-left: 1rem;
+      transition: 2s ease all;
+
+      &:hover,
+      &:focus {
+      }
+    }
+  }
 }
 
 //FOOTER INFORMATION SECTION
