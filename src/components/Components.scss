@@ -48,6 +48,44 @@
   bottom: 2%;
   right: 2%;
   z-index: 1;
+
+  &--scroll {
+    cursor: pointer;
+    background: $btn-bg;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.3rem;
+    animation: pulse 2s ease-in-out infinite reverse;
+
+    @keyframes pulse {
+      50% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      animation: none;
+      background: $btn-hover;
+    }
+
+    &__img {
+      width: 20px;
+
+      &:hover,
+      &:focus {
+        filter: brightness(0) invert(1);
+      }
+    }
+  }
+
   &--img {
     margin-top: 0.2rem;
     width: 35px;
@@ -111,12 +149,12 @@
   }
 
   &--actions {
+    display: flex;
     margin-bottom: 1rem;
     color: $secundary-text;
 
     &__view,
     &__link {
-      text-decoration: none;
       color: $headers;
       font-weight: bold;
     }
@@ -136,7 +174,6 @@
     padding: 1em 1.5em;
     font-weight: bold;
     font-size: 1rem;
-    transition: ease all 1s;
 
     &:hover,
     &:focus {
@@ -202,6 +239,31 @@
     }
 
     border: 1px solid $secundary-text;
+  }
+
+  &--text__action {
+    display: flex;
+    align-items: center;
+    margin-top: 0.5em;
+
+    &:hover:first-of-type img {
+      margin-left: 3rem;
+    }
+
+    h3 {
+      color: $headers;
+      font-size: 1.5rem;
+    }
+
+    img {
+      width: 2rem;
+      margin-left: 1rem;
+      transition: 2s ease all;
+
+      &:hover,
+      &:focus {
+      }
+    }
   }
 }
 

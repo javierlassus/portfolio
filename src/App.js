@@ -6,7 +6,6 @@ import Footer from "./components/Footer";
 import Icons from "./components/Icons";
 import Home from "./components/Home";
 import About from "./components/pages/About";
-import Projects from "./components/pages/Projects";
 import Contact from "./components/pages/Contact";
 import Resume from "./components/pages/Resume";
 
@@ -21,7 +20,6 @@ export default function App() {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />
-        <Route path="/projects" component={Projects} />
         <Route path="/contact" component={Contact} />
         <Route path="/resume" component={Resume} />
         <Route path="/neighboorhood-crime-alert" component={ProjectOne} />
