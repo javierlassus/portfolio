@@ -52,6 +52,22 @@
   bottom: 2%;
   right: 2%;
   z-index: 1;
+
+  &--scroll {
+    background: $btn-bg;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__img {
+      width: 20px;
+      fill: red;
+    }
+  }
+
   &--img {
     margin-top: 0.2rem;
     width: 30px;

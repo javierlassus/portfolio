@@ -6,7 +6,6 @@ import Footer from "./components/Footer";
 import Icons from "./components/Icons";
 import Home from "./components/Home";
 import About from "./components/pages/About";
-import Projects from "./components/pages/Projects";
 import Contact from "./components/pages/Contact";
 import Resume from "./components/pages/Resume";
 
