@@ -54,6 +54,7 @@
   z-index: 1;
 
   &--scroll {
+    cursor: pointer;
     background: $btn-bg;
     border-radius: 50%;
     width: 30px;
@@ -61,10 +62,31 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 0.3rem;
+    animation: pulse 2s ease-in-out infinite reverse;
+
+    @keyframes pulse {
+      50% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      animation: none;
+      background: $btn-hover;
+    }
 
     &__img {
       width: 20px;
-      fill: red;
+
+      &:hover,
+      &:focus {
+        filter: brightness(0) invert(1);
+      }
     }
   }
 
@@ -156,7 +178,6 @@
     padding: 1em 1.5em;
     font-weight: bold;
     font-size: 1rem;
-    transition: ease all 1s;
 
     &:hover,
     &:focus {
