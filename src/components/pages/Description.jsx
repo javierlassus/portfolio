@@ -1,5 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 import Fade from "react-reveal/Fade";
 
 export default function Description() {
@@ -22,17 +23,22 @@ export default function Description() {
       </Fade>
       <Fade right>
         <p className="description--actions">
-          <a className="description--actions__view" href="#projects">
+          <Link
+            className="description--actions__view"
+            to="section"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
             View Projects
-          </a>
-          or
-          <Link className="description--actions__link" to="/about">
-            Read About Me
           </Link>
+          or
+          <p className="description--actions__link" to="/about">
+            Read About Me
+          </p>
         </p>
-        <Link>
-          <button className="description--btn">Contact Me</button>
-        </Link>
+        <button className="description--btn">Contact Me</button>
       </Fade>
     </div>
   );

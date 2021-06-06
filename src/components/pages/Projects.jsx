@@ -5,7 +5,7 @@ import Fade from "react-reveal/Fade";
 
 export default function Projects() {
   return (
-    <div id="projects" className="projects">
+    <section title="section" id="section" className="projects">
       <Fade bottom>
         <div className="projects--header">
           <h3 className="projects--header__text">Personal Projects</h3>
@@ -21,6 +21,6 @@ export default function Projects() {
           </Fade>
         </div>
       </Link>
-    </div>
+    </section>
   );
 }

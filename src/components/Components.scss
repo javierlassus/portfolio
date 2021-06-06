@@ -154,6 +154,7 @@
 
 .projects {
   margin: 4rem 0.5rem 1rem 0.5rem;
+  padding-top: 1rem;
 
   &--header {
     margin-bottom: 1rem;
@@ -209,7 +210,6 @@
   }
 
   &--text__action {
-    background: yellow;
     display: flex;
     align-items: center;
     margin-top: 0.5em;
