@@ -115,12 +115,12 @@
   }
 
   &--actions {
+    display: flex;
     margin-bottom: 1rem;
     color: $secundary-text;
 
     &__view,
     &__link {
-      text-decoration: none;
       color: $headers;
       font-weight: bold;
     }
@@ -154,7 +154,6 @@
 
 .projects {
   margin: 4rem 0.5rem 1rem 0.5rem;
-  padding-top: 1rem;
 
   &--header {
     margin-bottom: 1rem;

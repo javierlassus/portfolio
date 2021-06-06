@@ -21,7 +21,6 @@ export default function App() {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />
-        <Route path="/projects" component={Projects} />
         <Route path="/contact" component={Contact} />
         <Route path="/resume" component={Resume} />
         <Route path="/neighboorhood-crime-alert" component={ProjectOne} />
