@@ -13,10 +13,6 @@
   @include nav;
   z-index: 2;
 
-  &--link {
-    // text-decoration: none;
-  }
-
   &--header {
     &__name {
       color: $headers;
@@ -48,6 +44,7 @@
 .social {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   position: fixed;
   bottom: 2%;
   right: 2%;
@@ -92,8 +89,8 @@
 
   &--img {
     margin-top: 0.2rem;
-    width: 30px;
-    height: 30px;
+    // width: 30px;
+    // height: 30px;
   }
 }
 
@@ -139,7 +136,6 @@
   &--text {
     margin-bottom: 1.5rem;
     color: $secundary-text;
-    // font-weight: bold;
   }
 
   &--name {
@@ -161,6 +157,11 @@
     &__link {
       color: $headers;
       font-weight: bold;
+
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
     }
     &__view {
       margin-right: 0.4em;
@@ -206,7 +207,7 @@
     &__text {
       padding: 1rem;
       background: chocolate;
-      height: 25rem;
+      height: 30rem;
       font-size: 1.1rem;
 
       p,
@@ -262,11 +263,6 @@
     img {
       width: 2rem;
       margin-left: 1rem;
-      transition: 2s ease all;
-
-      &:hover,
-      &:focus {
-      }
     }
   }
 }
@@ -302,6 +298,11 @@
     &__header,
     a {
       color: $headers;
+
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
     }
 
     p {
