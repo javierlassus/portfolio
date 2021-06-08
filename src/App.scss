@@ -1,5 +1,6 @@
 @import "./partials/colors";
 @import "./partials/fonts";
+@import "./partials/shapes";
 
 *,
 *::before,
@@ -9,6 +10,11 @@
   margin: 0;
   padding: 0;
   color: $secundary-text;
+  transition: ease all 1s;
+}
+
+*:focus {
+  outline: none !important;
 }
 
 body {
@@ -19,26 +25,8 @@ body {
 
 body::after {
   z-index: -2;
-  position: fixed;
-  content: "";
-  height: 50%;
-  width: 100%;
   background: $shape;
-  bottom: 0;
-  clip-path: polygon(
-    0 0,
-    0 100%,
-    100% 100%,
-    100% 84%,
-    95% 73%,
-    84% 71%,
-    68% 48%,
-    54% 44%,
-    51% 35%,
-    36% 28%,
-    25% 28%,
-    20% 17%
-  );
+  @include shape;
 }
 
 .link {

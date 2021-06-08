@@ -1,4 +1,5 @@
 @import "../partials/colors";
+@import "../partials/shapes";
 
 //NAVBAR
 
@@ -31,6 +32,7 @@
     align-items: center;
 
     &__menu {
+      letter-spacing: 0.2em;
       color: $headers;
       text-transform: uppercase;
       font-size: 13px;
@@ -39,19 +41,102 @@
   }
 }
 
+//MODAL
+
+.modal {
+  background: $headers;
+  position: fixed;
+  z-index: 2;
+  height: 90.5%;
+  width: 100%;
+  top: 9.5%;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &--menu,
+  &--pages {
+    padding: 0.5rem 1rem;
+    margin: 0.3em 0;
+  }
+
+  &--menu {
+    letter-spacing: 0.2em;
+    font-size: 1.2em;
+  }
+
+  &--pages {
+    font-size: 2em;
+
+    &:hover,
+    &:focus {
+      color: $main-bg;
+    }
+  }
+
+  &::after {
+    z-index: -1;
+    background: $secundary-shape;
+    @include shape;
+  }
+
+  .active {
+    color: $main-bg;
+  }
+}
+
 //SOCIAL ICONS
 
 .social {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   position: fixed;
   bottom: 2%;
   right: 2%;
   z-index: 1;
+
+  &--scroll {
+    cursor: pointer;
+    background: $btn-bg;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.3rem;
+    animation: pulse 2s ease-in-out infinite reverse;
+
+    @keyframes pulse {
+      50% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      animation: none;
+      background: $btn-hover;
+    }
+
+    &__img {
+      width: 20px;
+
+      &:hover,
+      &:focus {
+        filter: brightness(0) invert(1);
+      }
+    }
+  }
+
   &--img {
     margin-top: 0.2rem;
-    width: 35px;
-    height: 35px;
   }
 }
 
@@ -97,7 +182,6 @@
   &--text {
     margin-bottom: 1.5rem;
     color: $secundary-text;
-    // font-weight: bold;
   }
 
   &--name {
@@ -111,14 +195,19 @@
   }
 
   &--actions {
+    display: flex;
     margin-bottom: 1rem;
     color: $secundary-text;
 
     &__view,
     &__link {
-      text-decoration: none;
       color: $headers;
       font-weight: bold;
+
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
     }
     &__view {
       margin-right: 0.4em;
@@ -136,7 +225,6 @@
     padding: 1em 1.5em;
     font-weight: bold;
     font-size: 1rem;
-    transition: ease all 1s;
 
     &:hover,
     &:focus {
@@ -165,7 +253,7 @@
     &__text {
       padding: 1rem;
       background: chocolate;
-      height: 25rem;
+      height: 30rem;
       font-size: 1.1rem;
 
       p,
@@ -203,6 +291,26 @@
 
     border: 1px solid $secundary-text;
   }
+
+  &--text__action {
+    display: flex;
+    align-items: center;
+    margin-top: 0.5em;
+
+    &:hover:first-of-type img {
+      margin-left: 3rem;
+    }
+
+    h3 {
+      color: $headers;
+      font-size: 1.5rem;
+    }
+
+    img {
+      width: 2rem;
+      margin-left: 1rem;
+    }
+  }
 }
 
 //FOOTER INFORMATION SECTION
@@ -236,6 +344,11 @@
     &__header,
     a {
       color: $headers;
+
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
     }
 
     p {
