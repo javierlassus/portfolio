@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./Components.scss";
 import { Squash as Hamburger } from "hamburger-react";
 
-export default function NavBar({ showModal }) {
+export default function NavBar({ setModal, modal }) {
   //STATE FOR HAMBURGER MANU
   const [isOpen, setOpen] = useState(false);
 
@@ -18,7 +18,7 @@ export default function NavBar({ showModal }) {
       <div className="nav--btn">
         <p className="nav--btn__menu">menu</p>
         <Hamburger
-          onClick={showModal}
+          onToggle={() => setModal((prev) => !prev)}
           toggled={isOpen}
           toggle={setOpen}
           size={25}

@@ -17,13 +17,9 @@ export default function App() {
   //STATE FOR MODAL
   const [modal, setModal] = useState(false);
 
-  const showModal = () => {
-    setModal((prev) => !prev);
-  };
-
   return (
     <Router>
-      <NavBar showModal={showModal} setModal={setModal} />
+      <NavBar setModal={setModal} modal={modal} />
       <Modal modal={modal} setModal={setModal} />
       <Icons />
       <Switch>
