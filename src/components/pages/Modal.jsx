@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Link as Scroll } from "react-scroll";
+// import { Link as Scroll } from "react-scroll";
 import "../Components.scss";
 
 export default function Modal({ modal }) {
