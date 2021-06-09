@@ -3,10 +3,7 @@ import { Link } from "react-router-dom";
 import "./Components.scss";
 import { Squash as Hamburger } from "hamburger-react";
 
-export default function NavBar({ setModal, modal }) {
-  //STATE FOR HAMBURGER MANU
-  const [isOpen, setOpen] = useState(false);
-
+export default function NavBar({ isOpen, setOpen, setModal }) {
   return (
     <nav className="nav">
       <Link className="link" to="/">
