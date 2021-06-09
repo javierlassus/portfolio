@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import "./Components.scss";
 import { Squash as Hamburger } from "hamburger-react";
 
-export default function NavBar({ isOpen, setOpen, setModal }) {
+export default function NavBar({ isOpen, setOpen }) {
   return (
     <nav className="nav">
       <Link className="link" to="/">
@@ -15,9 +15,9 @@ export default function NavBar({ isOpen, setOpen, setModal }) {
       <div className="nav--btn">
         <p className="nav--btn__menu">menu</p>
         <Hamburger
-          onToggle={() => setModal((prev) => !prev)}
+          onToggle={() => setOpen((prev) => !prev)}
           toggled={isOpen}
-          toggle={setOpen}
+          // toggle={setOpen}
           size={25}
           rounded
           distance="sm"

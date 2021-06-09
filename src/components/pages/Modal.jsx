@@ -4,10 +4,10 @@ import Fade from "react-reveal/Fade";
 import { Squash as Hamburger } from "hamburger-react";
 import "../Components.scss";
 
-export default function Modal({ isOpen, setOpen, modal, setModal }) {
+export default function Modal({ isOpen, setOpen }) {
   return (
     <>
-      {modal ? (
+      {isOpen ? (
         <Fade top big opposite>
           <div className="modal">
             <nav className="nav">
@@ -15,13 +15,11 @@ export default function Modal({ isOpen, setOpen, modal, setModal }) {
                 <h1 className="nav--header__name">Javier Lassus</h1>
                 <p className="nav--header__title">Full-Stack Dev</p>
               </div>
-
               <div className="nav--btn">
                 <p className="nav--btn__menu">menu</p>
                 <Hamburger
-                  onToggle={() => setModal((prev) => !prev)}
+                  onToggle={() => setOpen((prev) => !prev)}
                   toggled={isOpen}
-                  toggle={setOpen}
                   size={25}
                   rounded
                   distance="sm"
@@ -31,25 +29,50 @@ export default function Modal({ isOpen, setOpen, modal, setModal }) {
               </div>
             </nav>
             <p className="modal--menu">MENU</p>
-            <Link className="link" activeClassName="active" to="/">
+            <Link
+              onClick={() => setOpen(false)}
+              className="link"
+              activeClassName="active"
+              to="/"
+            >
               <p className="modal--pages">PROJECTS</p>
             </Link>
-            <Link className="link" activeClassName="active" to="/about">
+            <Link
+              onClick={() => setOpen(false)}
+              className="link"
+              activeClassName="active"
+              to="/about"
+            >
               <p className="modal--pages">ABOUT ME</p>
             </Link>
-            <Link className="link" activeClassName="active" to="/contact">
+            <Link
+              onClick={() => setOpen(false)}
+              className="link"
+              activeClassName="active"
+              to="/contact"
+            >
               <p className="modal--pages">CONTACT ME</p>
             </Link>
-            <Link className="link" activeClassName="active" to="/resume">
+            <Link
+              onClick={() => setOpen(false)}
+              className="link"
+              activeClassName="active"
+              to="/resume"
+            >
               <p className="modal--pages">RESUME</p>
             </Link>
             <a
+              onClick={() => setOpen(false)}
               className="link"
               href="https://www.linkedin.com/in/javierlassus/"
             >
               <p className="modal--pages">LINKEDIN</p>
             </a>
-            <a className="link" href="https://github.com/javierlassus">
+            <a
+              onClick={() => setOpen(false)}
+              className="link"
+              href="https://github.com/javierlassus"
+            >
               <p className="modal--pages">GITHUB</p>
             </a>
           </div>
