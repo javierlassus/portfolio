@@ -15,7 +15,6 @@ export default function Modal({ isOpen, setOpen, modal, setModal }) {
                 <h1 className="nav--header__name">Javier Lassus</h1>
                 <p className="nav--header__title">Full-Stack Dev</p>
               </div>
-
               <div className="nav--btn">
                 <p className="nav--btn__menu">menu</p>
                 <Hamburger
@@ -30,27 +29,41 @@ export default function Modal({ isOpen, setOpen, modal, setModal }) {
                 />
               </div>
             </nav>
-            <p className="modal--menu">MENU</p>
+            <Fade top big cascade>
+              <p className="modal--menu">MENU</p>
+            </Fade>
             <Link className="link" activeClassName="active" to="/">
-              <p className="modal--pages">PROJECTS</p>
+              <Fade top big cascade>
+                <p className="modal--pages">PROJECTS</p>
+              </Fade>
             </Link>
             <Link className="link" activeClassName="active" to="/about">
-              <p className="modal--pages">ABOUT ME</p>
+              <Fade top big cascade>
+                <p className="modal--pages">ABOUT ME</p>
+              </Fade>
             </Link>
             <Link className="link" activeClassName="active" to="/contact">
-              <p className="modal--pages">CONTACT ME</p>
+              <Fade top big cascade>
+                <p className="modal--pages">CONTACT ME</p>
+              </Fade>
             </Link>
             <Link className="link" activeClassName="active" to="/resume">
-              <p className="modal--pages">RESUME</p>
+              <Fade top big cascade>
+                <p className="modal--pages">RESUME</p>
+              </Fade>
             </Link>
             <a
               className="link"
               href="https://www.linkedin.com/in/javierlassus/"
             >
-              <p className="modal--pages">LINKEDIN</p>
+              <Fade top big cascade>
+                <p className="modal--pages">LINKEDIN</p>
+              </Fade>
             </a>
             <a className="link" href="https://github.com/javierlassus">
-              <p className="modal--pages">GITHUB</p>
+              <Fade top big cascade>
+                <p className="modal--pages">GITHUB</p>
+              </Fade>
             </a>
           </div>
         </Fade>
