@@ -16,23 +16,11 @@ import ProjectOne from "./components/pages/ProjectOne";
 export default function App() {
   //STATE FOR HAMBURGER MANU
   const [isOpen, setOpen] = useState(false);
-  //STATE FOR MODAL
-  const [modal, setModal] = useState(false);
 
   return (
     <Router>
-      <NavBar
-        isOpen={isOpen}
-        setOpen={setOpen}
-        setModal={setModal}
-        modal={modal}
-      />
-      <Modal
-        isOpen={isOpen}
-        setOpen={setOpen}
-        setModal={setModal}
-        modal={modal}
-      />
+      <NavBar isOpen={isOpen} setOpen={setOpen} />
+      <Modal isOpen={isOpen} setOpen={setOpen} />
       <Icons />
       <Switch>
         <Route exact path="/" component={Home} />
