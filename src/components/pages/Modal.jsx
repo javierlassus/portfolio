@@ -1,12 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import Fade from "react-reveal/Fade";
 import { Squash as Hamburger } from "hamburger-react";
 import "../Components.scss";
 
 export default function Modal({ isOpen, setOpen }) {
-  const [show, setShow] = useState(true);
-
   return (
     <>
       {isOpen ? (
