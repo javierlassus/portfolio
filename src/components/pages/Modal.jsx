@@ -73,9 +73,7 @@ export default function Modal({ isOpen, setOpen }) {
               className="link"
               href="https://www.linkedin.com/in/javierlassus/"
             >
-              <Fade top big cascade>
-                <p className="modal--pages">LINKEDIN</p>
-              </Fade>
+              <p className="modal--pages">LINKEDIN</p>
             </a>
           </div>
         </Fade>
