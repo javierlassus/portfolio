@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Fade from "react-reveal/Fade";
 import { Squash as Hamburger } from "hamburger-react";
 import "../Components.scss";
 
 export default function Modal({ isOpen, setOpen }) {
+  const [show, setShow] = useState(true);
+
   return (
     <>
       {isOpen ? (
@@ -36,6 +38,14 @@ export default function Modal({ isOpen, setOpen }) {
               to="/"
             >
               <p className="modal--pages">PROJECTS</p>
+            </Link>{" "}
+            <Link
+              onClick={() => setOpen(false)}
+              className="link"
+              activeClassName="active"
+              to="/contact"
+            >
+              <p className="modal--pages">CONTACT ME</p>
             </Link>
             <Link
               onClick={() => setOpen(false)}
@@ -49,14 +59,6 @@ export default function Modal({ isOpen, setOpen }) {
               onClick={() => setOpen(false)}
               className="link"
               activeClassName="active"
-              to="/contact"
-            >
-              <p className="modal--pages">CONTACT ME</p>
-            </Link>
-            <Link
-              onClick={() => setOpen(false)}
-              className="link"
-              activeClassName="active"
               to="/resume"
             >
               <p className="modal--pages">RESUME</p>
@@ -64,16 +66,16 @@ export default function Modal({ isOpen, setOpen }) {
             <a
               onClick={() => setOpen(false)}
               className="link"
-              href="https://www.linkedin.com/in/javierlassus/"
+              href="https://github.com/javierlassus"
             >
-              <p className="modal--pages">LINKEDIN</p>
+              <p className="modal--pages">GITHUB</p>
             </a>
             <a
               onClick={() => setOpen(false)}
               className="link"
-              href="https://github.com/javierlassus"
+              href="https://www.linkedin.com/in/javierlassus/"
             >
-              <p className="modal--pages">GITHUB</p>
+              <p className="modal--pages">LINKEDIN</p>
             </a>
           </div>
         </Fade>
