@@ -1,6 +1,6 @@
 @import "../partials/colors";
 @import "../partials/shapes";
-@import "../partials/mixins2";
+@import "../partials/mixins";
 
 //NAVBAR
 .nav {
@@ -425,6 +425,7 @@
 
     &__btn {
       @include btn;
+      margin-top: 1rem;
     }
   }
 
