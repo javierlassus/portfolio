@@ -387,3 +387,51 @@
 .map {
   margin-top: 5rem;
 }
+
+.gmnoprint {
+  display: none;
+}
+
+//CONTACT DESCRIPTION
+
+.contactDesc {
+  margin: 5rem 0.5rem 3rem 0.5rem;
+
+  &--header {
+    letter-spacing: 0.2rem;
+    margin-bottom: 2rem;
+    color: $headers;
+  }
+}
+
+//CONTACT FORM
+
+.form {
+  margin-inline: 0.5rem;
+  display: flex;
+  flex-direction: column;
+
+  &--ctn {
+    margin: 1rem 0;
+
+    &__ii {
+      margin: 0.5rem 0;
+      border: 2px solid;
+      display: flex;
+      padding: 0.5em;
+
+      &__input,
+      textarea {
+        background: none;
+        caret-color: blue;
+        resize: none;
+        border: none;
+      }
+
+      &__img {
+        margin-right: 0.2rem;
+        width: 1.5rem;
+      }
+    }
+  }
+}

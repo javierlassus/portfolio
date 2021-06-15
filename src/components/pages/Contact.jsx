@@ -8,8 +8,8 @@ export default function Contact() {
   return (
     <div>
       <Map />
-      <Form />
       <ContactDescription />
+      <Form />
     </div>
   );
 }
