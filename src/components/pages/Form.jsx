@@ -6,7 +6,7 @@ export default function Form() {
     <form className="form">
       <div className="form--ctn">
         <label className="form--ctn__label" for="name">
-          Your Name
+          Full Name
         </label>
 
         <input className="form--ctn__input" type="name" />
@@ -18,21 +18,23 @@ export default function Form() {
 
         <input className="form--ctn__input" type="Email" />
       </div>
-      <select>
-        <option>What are you interested in?</option>
-        <option>Want to hire you full-time</option>
-        <option>Need help on a project</option>
-        <option>Leave a feedBack </option>
-        <option>Question </option>
-      </select>
       <div className="form--ctn">
+        <label className="form--ctn__label" for="Subject">
+          Subject
+        </label>
+        <input className="form--ctn__input" type="text" />
+      </div>
+      <div className="form--ctn textarea">
         <label className="form--ctn__label" for="Message">
           Message
         </label>
-
-        <textarea type="text" />
+        <textarea
+          className="form--ctn__textarea"
+          rows="5"
+          cols="50"
+          type="text"
+        />
       </div>
-
       <input
         className="form--ctn__input form--ctn__btn"
         type="submit"

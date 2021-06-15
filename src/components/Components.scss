@@ -390,6 +390,17 @@
     margin-bottom: 2rem;
     color: $headers;
   }
+
+  &--message__span {
+    a {
+      color: $headers;
+
+      &:hover,
+      &:focus {
+        @include btn;
+      }
+    }
+  }
 }
 
 //CONTACT FORM
@@ -416,7 +427,7 @@
     }
 
     &__input,
-    textarea {
+    &__textarea {
       background: none;
       caret-color: $secundary-text;
       resize: none;
@@ -442,6 +453,15 @@
       padding: 0.2em;
       font-size: 0.9rem;
       border-radius: 0.2rem;
+    }
+  }
+
+  .textarea:focus-within {
+    height: unset;
+    padding-top: 1rem;
+
+    .form--ctn__label {
+      top: -8%;
     }
   }
 }

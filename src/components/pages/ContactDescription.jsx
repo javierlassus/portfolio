@@ -10,7 +10,9 @@ export default function ContactDescription() {
         a message below or use my email address to get in contact
         <br />
         <span className="contactDesc--message__span">
-          development@javierlassus.com
+          <a href="mailto:development@javierlassus.com">
+            development@javierlassus.com
+          </a>
         </span>
       </p>
     </div>
