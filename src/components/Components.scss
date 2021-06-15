@@ -1,8 +1,8 @@
 @import "../partials/colors";
 @import "../partials/shapes";
+@import "../partials/mixins2";
 
 //NAVBAR
-
 .nav {
   position: fixed;
   top: 0;
@@ -235,19 +235,7 @@
   }
 
   &--btn {
-    color: $headers;
-    border: none;
-    border-radius: 0.4em;
-    background: #e8e8e899;
-    padding: 1em 1.5em;
-    font-weight: bold;
-    font-size: 1rem;
-
-    &:hover,
-    &:focus {
-      background: $btn-hover;
-      color: white;
-    }
+    @include btn;
   }
 }
 
@@ -306,7 +294,7 @@
       margin-bottom: 4rem;
     }
 
-    border: 1px solid $secundary-text;
+    border: 1px solid $btn-bg;
   }
 
   &--text__action {
@@ -412,26 +400,47 @@
   flex-direction: column;
 
   &--ctn {
-    margin: 1rem 0;
+    margin: 0.5rem 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 3rem;
+    border-bottom: 2px solid $input;
+    justify-content: flex-end;
+    padding: 0.5rem;
 
-    &__ii {
-      margin: 0.5rem 0;
-      border: 2px solid;
-      display: flex;
-      padding: 0.5em;
+    &__label {
+      position: absolute;
+      top: 50%;
+      z-index: -1;
+    }
 
-      &__input,
-      textarea {
-        background: none;
-        caret-color: blue;
-        resize: none;
-        border: none;
-      }
+    &__input,
+    textarea {
+      background: none;
+      caret-color: $secundary-text;
+      resize: none;
+      border: none;
+    }
 
-      &__img {
-        margin-right: 0.2rem;
-        width: 1.5rem;
-      }
+    &__btn {
+      @include btn;
+    }
+  }
+
+  &--ctn:focus-within {
+    border: none;
+    border: 2px solid $btn-hover;
+    border-radius: 0.2rem;
+
+    .form--ctn__label {
+      top: -23%;
+      z-index: 1;
+      color: $main-bg;
+      background: $btn-hover;
+      padding: 0.2em;
+      font-size: 0.9rem;
+      border-radius: 0.2rem;
     }
   }
 }
