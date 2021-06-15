@@ -11,27 +11,15 @@ export default function Form() {
         <label className="form--ctn__label" for="name">
           Your Name
         </label>
-        <div className="form--ctn__ii">
-          <img className="form--ctn__ii__img" src={Name} alt="Name" />
-          <input
-            className="form--ctn__ii__input"
-            type="name"
-            placeholder="Full Name..."
-          />
-        </div>
+
+        <input className="form--ctn__input" type="name" />
       </div>
       <div className="form--ctn">
         <label className="form--ctn__label" for="Email">
           Email
         </label>
-        <div className="form--ctn__ii">
-          <img className="form--ctn__ii__img" src={Email} alt="Email" />
-          <input
-            className="form--ctn__ii__input"
-            type="Email"
-            placeholder="Email..."
-          />
-        </div>
+
+        <input className="form--ctn__input" type="Email" />
       </div>
       <select>
         <option>What are you interested in?</option>
@@ -44,12 +32,15 @@ export default function Form() {
         <label className="form--ctn__label" for="Message">
           Message
         </label>
-        <div className="form--ctn__ii">
-          <img className="form--ctn__ii__img" src={Message} alt="Message" />
-          <textarea type="text" placeholder="Message..." />
-        </div>
+
+        <textarea type="text" />
       </div>
-      <input className="form--ctn__ii__input" type="submit" value="SEND" />
+
+      <input
+        className="form--ctn__input form--ctn__btn"
+        type="submit"
+        value="SEND"
+      />
     </form>
   );
 }

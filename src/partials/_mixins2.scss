@@ -1,0 +1,17 @@
+@import "./_colors.scss";
+
+@mixin btn {
+  color: $headers;
+  border: none;
+  border-radius: 0.4em;
+  background: #e8e8e899;
+  padding: 1em 1.5em;
+  font-weight: bold;
+  font-size: 1rem;
+
+  &:hover,
+  &:focus {
+    background: $btn-hover;
+    color: white;
+  }
+}
