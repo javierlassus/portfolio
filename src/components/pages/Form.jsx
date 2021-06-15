@@ -1,8 +1,5 @@
 import React from "react";
 import "../Components.scss";
-import Name from "../../assets/icons/name.svg";
-import Email from "../../assets/icons/email.svg";
-import Message from "../../assets/icons/comment.svg";
 
 export default function Form() {
   return (
