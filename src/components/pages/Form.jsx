@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import "../Components.scss";
 
 export default function Form() {
+  const [inputs, setInputs] = useState({
+    fullName: "",
+    Email: "",
+    Subject: "",
+    Message: "",
+  });
+  //FORM SUBMIT
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+
   return (
-    <form className="form">
+    <form className="form" onSubmit={handleSubmit}>
       <div className="form--ctn">
         <label className="form--ctn__label" for="name">
           Full Name
