@@ -11,7 +11,7 @@ export default function Projects() {
           <h3 className="projects--header__text">Personal Projects</h3>
         </div>
       </Fade>
-      <Link to="/neighboorhood-crime-alert" className="link">
+      <Link to="/neighborhood-crime-alert" className="link">
         <div className="projects--descr">
           <Fade bottom>
             <div className="projects--descr__text">

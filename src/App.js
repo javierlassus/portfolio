@@ -27,7 +27,7 @@ export default function App() {
         <Route path="/about" component={About} />
         <Route path="/contact" component={Contact} />
         <Route path="/resume" component={Resume} />
-        <Route path="/neighboorhood-crime-alert" component={ProjectOne} />
+        <Route path="/neighborhood-crime-alert" component={ProjectOne} />
       </Switch>
       <Footer />
     </Router>

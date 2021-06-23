@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import "../Components.scss";
 
 export default function Form() {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const form = e.target;
+    form.reset();
+  };
   return (
-    <form className="form">
+    <form onSubmit={handleSubmit} className="form" data-netlify="true">
       <div className="form--ctn">
         <label className="form--ctn__label" for="name">
           Full Name
