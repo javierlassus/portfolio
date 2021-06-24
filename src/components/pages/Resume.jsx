@@ -1,5 +1,10 @@
 import React from "react";
+import Download from "./Download";
 
 export default function Resume() {
-  return <div></div>;
+  return (
+    <div>
+      <Download />
+    </div>
+  );
 }

@@ -7,13 +7,13 @@ export default function Form() {
     const form = e.target;
     form.reset();
   };
+
   return (
     <form onSubmit={handleSubmit} className="form" data-netlify="true">
       <div className="form--ctn">
         <label className="form--ctn__label" for="name">
           Full Name
         </label>
-
         <input className="form--ctn__input" type="name" />
       </div>
       <div className="form--ctn">
