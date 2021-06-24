@@ -16,6 +16,7 @@ export default function Form() {
       className="form"
       data-netlify="true"
     >
+      <input type="hidden" name="form-name" value="contact" />
       <div className="form--ctn">
         <label className="form--ctn__label" for="name">
           Full Name
