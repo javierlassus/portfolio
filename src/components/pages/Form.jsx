@@ -9,7 +9,12 @@ export default function Form() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="form" data-netlify="true">
+    <form
+      onSubmit={handleSubmit}
+      method="POST"
+      className="form"
+      data-netlify="true"
+    >
       <div className="form--ctn">
         <label className="form--ctn__label" for="name">
           Full Name
