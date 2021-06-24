@@ -46,11 +46,9 @@ export default function Form() {
           name="message"
         />
       </div>
-      <input
-        className="form--ctn__input form--ctn__btn"
-        type="submit"
-        value="SEND"
-      />
+      <button className="form--ctn__input form--ctn__btn" type="submit">
+        SEND
+      </button>
     </form>
   );
 }
