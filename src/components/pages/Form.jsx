@@ -11,6 +11,7 @@ export default function Form() {
   return (
     <form
       onSubmit={handleSubmit}
+      name="contact"
       method="POST"
       className="form"
       data-netlify="true"
@@ -19,20 +20,19 @@ export default function Form() {
         <label className="form--ctn__label" for="name">
           Full Name
         </label>
-        <input className="form--ctn__input" type="name" />
+        <input className="form--ctn__input" type="text" name="Full Name" />
       </div>
       <div className="form--ctn">
         <label className="form--ctn__label" for="Email">
           Email
         </label>
-
-        <input className="form--ctn__input" type="Email" />
+        <input className="form--ctn__input" type="Email" name="Email" />
       </div>
       <div className="form--ctn">
         <label className="form--ctn__label" for="Subject">
           Subject
         </label>
-        <input className="form--ctn__input" type="text" />
+        <input className="form--ctn__input" type="text" name="Subject" />
       </div>
       <div className="form--ctn textarea">
         <label className="form--ctn__label" for="Message">
@@ -43,6 +43,7 @@ export default function Form() {
           rows="5"
           cols="50"
           type="text"
+          name="message"
         />
       </div>
       <input
