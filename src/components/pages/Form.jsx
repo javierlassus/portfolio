@@ -3,26 +3,27 @@ import "../Components.scss";
 import TextField from "@material-ui/core/TextField";
 import { makeStyles } from "@material-ui/core/styles";
 
+//MATERIAL UI STYLE FOR INPUTS
 const useStyles = makeStyles((theme) => ({
   root: {
     "& > *": {
       margin: theme.spacing(1),
       display: "flex",
-      // flexWrap: "wrap",
     },
   },
 }));
 
 export default function Form() {
+  //TO RENDER THE THANK YOU MESSAGE
   const [success, setSuccess] = useState(false);
-
-  const classes = useStyles();
-
   useEffect(() => {
     if (window.location.search.includes("success=true")) {
       setSuccess(true);
     }
   }, []);
+
+  //MATERIAL UI CLASS NAME FOR FORM
+  const classes = useStyles();
 
   return (
     <form
@@ -35,7 +36,7 @@ export default function Form() {
       noValidate
       autoComplete="off"
     >
-      {success && <p style={{ color: "green" }}>Thanks for your message! </p>}
+      {success && <p style={{ color: "#2f4858" }}>Thanks for your message! </p>}
 
       <TextField
         id="outlined-basic"

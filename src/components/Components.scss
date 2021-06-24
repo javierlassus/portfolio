@@ -410,7 +410,7 @@
 
   &--ctn__btn {
     @include btn;
-    margin-top: 1rem;
+    margin-top: 1.52rem !important;
     padding-inline: 3rem;
   }
 }
