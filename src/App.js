@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./App.scss";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import ScrollToTop from "./components/pages/ScrollTop";
 import NavBar from "./components/NavBar";
 import Modal from "./components/pages/Modal.jsx";
 import Footer from "./components/Footer";
@@ -19,6 +20,7 @@ export default function App() {
 
   return (
     <Router>
+      <ScrollToTop />
       <NavBar isOpen={isOpen} setOpen={setOpen} />
       <Modal isOpen={isOpen} setOpen={setOpen} />
       <Icons />

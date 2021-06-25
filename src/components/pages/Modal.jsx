@@ -29,36 +29,16 @@ export default function Modal({ isOpen, setOpen }) {
               </div>
             </nav>
             <p className="modal--menu">MENU</p>
-            <Link
-              onClick={() => setOpen(false)}
-              className="link"
-              activeClassName="active"
-              to="/"
-            >
+            <Link onClick={() => setOpen(false)} className="link" to="/">
               <p className="modal--pages">PROJECTS</p>
             </Link>{" "}
-            <Link
-              onClick={() => setOpen(false)}
-              className="link"
-              activeClassName="active"
-              to="/contact"
-            >
+            <Link onClick={() => setOpen(false)} className="link" to="/contact">
               <p className="modal--pages">CONTACT ME</p>
             </Link>
-            <Link
-              onClick={() => setOpen(false)}
-              className="link"
-              activeClassName="active"
-              to="/about"
-            >
+            <Link onClick={() => setOpen(false)} className="link" to="/about">
               <p className="modal--pages">ABOUT ME</p>
             </Link>
-            <Link
-              onClick={() => setOpen(false)}
-              className="link"
-              activeClassName="active"
-              to="/resume"
-            >
+            <Link onClick={() => setOpen(false)} className="link" to="/resume">
               <p className="modal--pages">RESUME</p>
             </Link>
             <a

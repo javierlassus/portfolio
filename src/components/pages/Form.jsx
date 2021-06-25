@@ -29,7 +29,7 @@ export default function Form() {
     <form
       name="contact"
       method="POST"
-      className="form"
+      // className="form "
       data-netlify="true"
       action="/contact/?success=true"
       className={classes.root}
