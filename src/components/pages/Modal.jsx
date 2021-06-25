@@ -33,6 +33,7 @@ export default function Modal({ isOpen, setOpen }) {
             <HashLink
               onClick={() => setOpen(false)}
               className="link"
+              smooth
               to="/#section"
             >
               <p className="modal--pages">PROJECTS</p>
