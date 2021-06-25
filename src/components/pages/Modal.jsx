@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import Fade from "react-reveal/Fade";
 import { Squash as Hamburger } from "hamburger-react";
 import "../Components.scss";
@@ -29,36 +30,21 @@ export default function Modal({ isOpen, setOpen }) {
               </div>
             </nav>
             <p className="modal--menu">MENU</p>
-            <Link
+            <HashLink
               onClick={() => setOpen(false)}
               className="link"
-              activeClassName="active"
-              to="/"
+              smooth
+              to="/#section"
             >
               <p className="modal--pages">PROJECTS</p>
-            </Link>{" "}
-            <Link
-              onClick={() => setOpen(false)}
-              className="link"
-              activeClassName="active"
-              to="/contact"
-            >
+            </HashLink>
+            <Link onClick={() => setOpen(false)} className="link" to="/contact">
               <p className="modal--pages">CONTACT ME</p>
             </Link>
-            <Link
-              onClick={() => setOpen(false)}
-              className="link"
-              activeClassName="active"
-              to="/about"
-            >
+            <Link onClick={() => setOpen(false)} className="link" to="/about">
               <p className="modal--pages">ABOUT ME</p>
             </Link>
-            <Link
-              onClick={() => setOpen(false)}
-              className="link"
-              activeClassName="active"
-              to="/resume"
-            >
+            <Link onClick={() => setOpen(false)} className="link" to="/resume">
               <p className="modal--pages">RESUME</p>
             </Link>
             <a

@@ -405,63 +405,8 @@
 
 //CONTACT FORM
 
-.form {
-  margin-inline: 0.5rem;
-  display: flex;
-  flex-direction: column;
-
-  &--ctn {
-    margin: 0.5rem 0;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    height: 3rem;
-    border-bottom: 2px solid $input;
-    justify-content: flex-end;
-    padding: 0.5rem;
-
-    &__label {
-      position: absolute;
-      top: 50%;
-      z-index: -1;
-    }
-
-    &__input,
-    &__textarea {
-      background: none;
-      caret-color: $secundary-text;
-      resize: none;
-      border: none;
-    }
-
-    &__btn {
-      @include btn;
-      margin-top: 1rem;
-    }
-  }
-
-  &--ctn:focus-within {
-    border: none;
-    border: 2px solid $btn-hover;
-    border-radius: 0.2rem;
-
-    .form--ctn__label {
-      top: -23%;
-      z-index: 1;
-      color: $main-bg;
-      background: $btn-hover;
-      padding: 0.2em;
-      font-size: 0.9rem;
-      border-radius: 0.2rem;
-    }
-  }
-
-  .textarea:focus-within {
-    height: unset;
-    padding-top: 1rem;
-
-    .form--ctn__label {
-      top: -8%;
-    }
-  }
+.form--ctn__btn {
+  @include btn;
+  margin-top: 1.52rem !important;
+  padding-inline: 3rem;
 }
