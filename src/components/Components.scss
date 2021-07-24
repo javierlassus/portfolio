@@ -243,6 +243,7 @@
 
 .projects {
   margin: 4rem 0.5rem 1rem 0.5rem;
+  position: relative;
 
   &--header {
     margin-bottom: 1rem;
@@ -257,7 +258,7 @@
   &--descr {
     &__text {
       padding: 1rem;
-      background: chocolate;
+      background: orange;
       height: 30rem;
       font-size: 1.1rem;
 

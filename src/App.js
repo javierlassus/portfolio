@@ -7,7 +7,6 @@ import Modal from "./components/pages/Modal.jsx";
 import Footer from "./components/Footer";
 import Icons from "./components/Icons";
 import Home from "./components/Home";
-import About from "./components/pages/About";
 import Contact from "./components/pages/Contact";
 import Resume from "./components/pages/Resume";
 
@@ -26,7 +25,6 @@ export default function App() {
       <Icons />
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route path="/about" component={About} />
         <Route path="/contact" component={Contact} />
         <Route path="/resume" component={Resume} />
         <Route path="/neighborhood-crime-alert" component={ProjectOne} />
