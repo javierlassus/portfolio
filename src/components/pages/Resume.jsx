@@ -1,4 +1,5 @@
 import React from "react";
+import ResumeHero from "./ResumeHero";
 import Download from "./Download";
 import ResumeDescription from "./ResumeDescription";
 import ResumeExperience from "./ResumeExperience";
@@ -9,7 +10,9 @@ import ResumeProjects from "./ResumeProjects";
 export default function Resume() {
   return (
     <div>
+      <ResumeHero />
       <Download />
+
       <ResumeDescription />
       <ResumeExperience />
       <ResumeEducation />

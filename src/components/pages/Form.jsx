@@ -42,7 +42,7 @@ export default function Form() {
         id="outlined-basic"
         variant="outlined"
         label="Name"
-        type="text"
+        type="name"
         color="secondary"
       />
 

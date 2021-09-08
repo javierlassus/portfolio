@@ -24,7 +24,7 @@ export default function Map() {
 
   //To allow the Map to render properly
   const { isLoaded, loadError } = useLoadScript({
-    googleMapsApiKey: "AIzaSyCoSugC1KzFlmbAMlCYSnRbZjgb5u0CgtQ",
+    googleMapsApiKey: "AIzaSyAfKca8q7YdQlPLgxYP-s0wOOw44m69st4",
     libraries,
   });
 

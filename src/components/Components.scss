@@ -411,3 +411,48 @@
   margin-top: 1.52rem !important;
   padding-inline: 3rem;
 }
+
+//RESUME
+
+.section {
+  color: $headers;
+  margin-bottom: 2rem;
+}
+
+//RESUME HERO
+
+.hero {
+  margin-top: 7rem;
+  height: 15rem;
+  background: orange;
+}
+
+//RESUME DESCRIPTION
+
+.resumeDesc {
+  margin: 7rem 0.5rem;
+}
+
+//RESUME EXPERIENCE
+
+.experience {
+  margin-inline: 0.5rem;
+
+  &--ctn {
+    margin-top: 2rem;
+
+    &__title {
+      font-size: 1.2rem;
+      color: $headers;
+    }
+
+    &__time {
+      margin-bottom: 1rem;
+      font-size: 0.8rem;
+    }
+
+    &__list {
+      margin-left: 1rem;
+    }
+  }
+}
