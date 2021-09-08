@@ -243,6 +243,7 @@
 
 .projects {
   margin: 4rem 0.5rem 1rem 0.5rem;
+  position: relative;
 
   &--header {
     margin-bottom: 1rem;
@@ -257,7 +258,7 @@
   &--descr {
     &__text {
       padding: 1rem;
-      background: chocolate;
+      background: orange;
       height: 30rem;
       font-size: 1.1rem;
 
@@ -394,10 +395,11 @@
   &--message__span {
     a {
       color: $headers;
+      text-decoration: none;
 
       &:hover,
       &:focus {
-        @include btn;
+        text-decoration: underline;
       }
     }
   }
@@ -409,4 +411,51 @@
   @include btn;
   margin-top: 1.52rem !important;
   padding-inline: 3rem;
+}
+
+//RESUME
+
+.section {
+  color: $headers;
+  margin-bottom: 2rem;
+}
+
+//RESUME HERO
+
+.hero {
+  margin-top: 7rem;
+  height: 15rem;
+  background: url(../assets/images/markus-winkler-7iSEHWsxPLw-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+//RESUME DESCRIPTION
+
+.resumeDesc {
+  margin: 6rem 0.5rem;
+}
+
+//RESUME EXPERIENCE
+
+.experience {
+  margin-inline: 0.5rem;
+
+  &--ctn {
+    margin-top: 2rem;
+
+    &__title {
+      font-size: 1.2rem;
+      color: $headers;
+    }
+
+    &__time {
+      margin-bottom: 1rem;
+      font-size: 0.8rem;
+    }
+
+    &__list {
+      margin-left: 1rem;
+    }
+  }
 }

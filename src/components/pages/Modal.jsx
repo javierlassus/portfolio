@@ -41,9 +41,6 @@ export default function Modal({ isOpen, setOpen }) {
             <Link onClick={() => setOpen(false)} className="link" to="/contact">
               <p className="modal--pages">CONTACT ME</p>
             </Link>
-            <Link onClick={() => setOpen(false)} className="link" to="/about">
-              <p className="modal--pages">ABOUT ME</p>
-            </Link>
             <Link onClick={() => setOpen(false)} className="link" to="/resume">
               <p className="modal--pages">RESUME</p>
             </Link>
