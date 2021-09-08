@@ -187,7 +187,6 @@
   background: url(../assets/images/fernando-hernandez-JdoofvUDUwc-unsplash.jpg);
   background-size: cover;
   background-position: center;
-  clip-path: polygon(45% 0, 100% 0, 100% 28%, 58% 100%, 0 100%, 0 70%);
 
   &::before,
   &::after {
@@ -201,11 +200,28 @@
   &::before {
     top: 0;
     height: 6.5rem;
+
+    @media (min-width: 511px) {
+      & {
+        height: 7rem;
+      }
+    }
+    @media (min-width: 1200px) {
+      & {
+        height: 12.5rem;
+      }
+    }
   }
 
   &::after {
     bottom: 0;
     height: 6rem;
+
+    @media (min-width: 511px) {
+      & {
+        height: 3rem;
+      }
+    }
   }
 }
 
@@ -504,6 +520,43 @@
   background: url(../assets/images/markus-winkler-7iSEHWsxPLw-unsplash.jpg);
   background-position: center;
   background-size: cover;
+  position: relative;
+
+  @media (min-width: 511px) {
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      background: #dbdbdb33;
+      backdrop-filter: blur(0.3rem);
+      width: 100%;
+    }
+
+    &::before {
+      top: 0;
+      width: 2rem;
+      height: 20rem;
+
+      @media (min-width: 1200px) {
+        & {
+          width: 11.25rem;
+        }
+      }
+    }
+
+    &::after {
+      top: 0;
+      right: 0;
+      width: 2rem;
+      height: 20rem;
+
+      @media (min-width: 1200px) {
+        & {
+          width: 11.25rem;
+        }
+      }
+    }
+  }
 }
 
 //RESUME DESCRIPTION
