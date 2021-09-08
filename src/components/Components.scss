@@ -139,6 +139,13 @@
     margin-bottom: 0.3rem;
     animation: pulse 2s ease-in-out infinite reverse;
 
+    @media (min-width: 511px) {
+      & {
+        width: 35px;
+        height: 35px;
+      }
+    }
+
     @keyframes pulse {
       50% {
         opacity: 0;
