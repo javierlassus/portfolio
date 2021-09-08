@@ -29,9 +29,8 @@ export default function Form() {
     <form
       name="contact"
       method="POST"
-      // className="form "
-      data-netlify="true"
       action="/contact/?success=true"
+      data-netlify="true"
       className={classes.root}
       noValidate
       autoComplete="off"
