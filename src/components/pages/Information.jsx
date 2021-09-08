@@ -6,7 +6,12 @@ export default function Information() {
       <div className="information--ctn">
         <h3 className="information--ctn__header">Contact Information</h3>
         <p className="information--ctn__details">
-          E:<span>development@javierlassus.com</span>
+          E:
+          <span>
+            <a href="mailto:development@javierlassus.com">
+              development@javierlassus.com
+            </a>
+          </span>
         </p>
         <p className="information--ctn__details">
           P:<span>786-678-5476</span>

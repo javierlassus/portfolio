@@ -395,10 +395,11 @@
   &--message__span {
     a {
       color: $headers;
+      text-decoration: none;
 
       &:hover,
       &:focus {
-        @include btn;
+        text-decoration: underline;
       }
     }
   }
@@ -424,13 +425,15 @@
 .hero {
   margin-top: 7rem;
   height: 15rem;
-  background: orange;
+  background: url(../assets/images/markus-winkler-7iSEHWsxPLw-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 //RESUME DESCRIPTION
 
 .resumeDesc {
-  margin: 7rem 0.5rem;
+  margin: 6rem 0.5rem;
 }
 
 //RESUME EXPERIENCE
