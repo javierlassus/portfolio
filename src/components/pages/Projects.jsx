@@ -14,10 +14,8 @@ export default function Projects() {
       <Link to="/neighborhood-crime-alert" className="link">
         <div className="projects--descr">
           <Fade bottom>
-            <div className="projects--descr__text">
-              <p>2021</p>
-              <h3>Neighborhood Crime Alert</h3>
-            </div>
+            <div className="projects--descr__picOne"></div>
+            <div className="projects--descr__picTwo"></div>
           </Fade>
         </div>
       </Link>
