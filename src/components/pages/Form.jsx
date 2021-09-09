@@ -6,9 +6,8 @@ import { makeStyles } from "@material-ui/core/styles";
 //MATERIAL UI STYLE FOR INPUTS
 const useStyles = makeStyles((theme) => ({
   root: {
-    "& > *": {
-      margin: theme.spacing(1),
-      display: "flex",
+    "& .MuiTextField-root": {
+      width: 340,
     },
   },
 }));
@@ -26,53 +25,60 @@ export default function Form() {
   const classes = useStyles();
 
   return (
-    <form
-      name="contact"
-      method="POST"
-      action="/contact/?success=true"
-      data-netlify="true"
-      className={classes.root}
-      noValidate
-      autoComplete="off"
-    >
-      {success && <p style={{ color: "#2f4858" }}>Thanks for your message! </p>}
-
-      <TextField
-        id="outlined-basic"
-        variant="outlined"
-        label="Name"
-        type="Full Name"
-        color="secondary"
-      />
-
-      <TextField
-        id="outlined-basic"
-        variant="outlined"
-        label="Email"
-        type="email"
-        color="secondary"
-      />
-
-      <TextField
-        id="outlined-basic"
-        variant="outlined"
-        label="Subject"
-        type="text"
-        color="secondary"
-      />
-
-      <TextField
-        id="outlined-textarea"
-        label="Message"
-        placeholder="Type Here..."
-        multiline
-        variant="outlined"
-        color="secondary"
-      />
-
+    <div className="form">
+      <form
+        name="contact"
+        method="POST"
+        action="/contact/?success=true"
+        data-netlify="true"
+        className={classes.root}
+        noValidate
+        autoComplete="off"
+      >
+        {success && (
+          <p style={{ color: "#2f4858" }}>Thanks for your message! </p>
+        )}
+        <div className="form--textfield">
+          <TextField
+            id="outlined-basic"
+            variant="outlined"
+            label="Name"
+            type="Full Name"
+            color="secondary"
+          />
+        </div>
+        <div className="form--textfield">
+          <TextField
+            id="outlined-basic"
+            variant="outlined"
+            label="Email"
+            type="email"
+            color="secondary"
+          />
+        </div>
+        <div className="form--textfield">
+          <TextField
+            id="outlined-basic"
+            variant="outlined"
+            label="Subject"
+            type="text"
+            color="secondary"
+          />
+        </div>
+        <div className="form--textfield">
+          <TextField
+            id="outlined-textarea"
+            label="Message"
+            placeholder="Type Here..."
+            multiline
+            variant="outlined"
+            color="secondary"
+          />
+        </div>
+      </form>
       <button className="form--ctn__input form--ctn__btn" type="submit">
         SEND
       </button>
-    </form>
+    </div>
   );
 }
